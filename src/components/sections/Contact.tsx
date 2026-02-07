@@ -1,12 +1,17 @@
 "use client"
 
+ feature/production-ready-app-6583233985221145918
+
 import * as React from "react"
+ main
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
 import { Mail, MessageSquare, Phone, Send } from "lucide-react"
 
 export function Contact() {
+ feature/production-ready-app-6583233985221145918
+
   const [isSubmitted, setIsSubmitted] = React.useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -14,6 +19,7 @@ export function Contact() {
     setIsSubmitted(true)
   }
 
+ main
   return (
     <section id="contact" className="py-24 px-6 relative">
       <div className="max-w-7xl mx-auto">
@@ -68,6 +74,47 @@ export function Contact() {
             viewport={{ once: true }}
           >
             <Card className="p-8">
+ feature/production-ready-app-6583233985221145918
+              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-slate-300">First Name</label>
+                    <input
+                      type="text"
+                      className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors"
+                      placeholder="Jane"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-slate-300">Last Name</label>
+                    <input
+                      type="text"
+                      className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors"
+                      placeholder="Doe"
+                    />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-slate-300">Email Address</label>
+                  <input
+                    type="email"
+                    className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors"
+                    placeholder="jane@example.com"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-slate-300">Message</label>
+                  <textarea
+                    rows={4}
+                    className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors resize-none"
+                    placeholder="How can we help you?"
+                  />
+                </div>
+                <Button className="w-full py-4 h-auto text-lg">
+                  Send Message <Send className="ml-2 w-5 h-5" />
+                </Button>
+              </form>
+
               {isSubmitted ? (
                 <div className="text-center py-12">
                   <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -126,6 +173,7 @@ export function Contact() {
                   </Button>
                 </form>
               )}
+ main
             </Card>
           </motion.div>
         </div>
