@@ -32,10 +32,16 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-white mb-6">Company</h4>
             <ul className="space-y-4 text-sm text-muted">
+ feature/production-ready-app-6583233985221145918
               <li><Link href="#" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="#" className="hover:text-primary transition-colors">Careers</Link></li>
               <li><Link href="#" className="hover:text-primary transition-colors">Blog</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Press</Link></li>
+
+              <li><Link href="/#about" className="hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="/music" className="hover:text-primary transition-colors">Music</Link></li>
+              <li><Link href="/blog" className="hover:text-primary transition-colors">Blog</Link></li>
+              <li><Link href="/#contact" className="hover:text-primary transition-colors">Contact</Link></li>
+ main
             </ul>
           </div>
 

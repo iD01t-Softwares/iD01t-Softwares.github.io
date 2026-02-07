@@ -1,3 +1,4 @@
+feature/production-ready-app-6583233985221145918
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# iD01t Softwares
+
+Premium Digital Solutions. Building the Future Bit by Bit.
+
+## Features
+- Modern Next.js 16 Application
+- Tailwind CSS 4.0 Styling
+- Framer Motion Animations
+- Blog and Music sections
+- Contact form with success state
+
+## Development
+```bash
+npm install
+npm run dev
+```
+
+## Production
+```bash
+npm run build
+npm run start
+```
+main

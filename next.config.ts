@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+ feature/production-ready-app-6583233985221145918
+
+  // Allow all hosts for live preview
+  serverExternalPackages: [],
+ main
 };
 
 export default nextConfig;

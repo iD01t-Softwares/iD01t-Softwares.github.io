@@ -18,10 +18,17 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
+feature/production-ready-app-6583233985221145918
     { name: "Services", href: "#features" },
     { name: "Projects", href: "#portfolio" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
+
+    { name: "Music", href: "/music" },
+    { name: "Blog", href: "/blog" },
+    { name: "About", href: "/#about" },
+    { name: "Contact", href: "/#contact" },
+ main
   ]
 
   return (
